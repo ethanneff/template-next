@@ -35,16 +35,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 # TODO
 
-- fav icon
-- albums
-- posts
-- pagination
-- header
-- footer
-- styling
-- lint
-- jest
-- semantic release
-- github package
-- github actions
-- image hosting
+- [x] fav icon
+- [ ] albums
+- [ ] posts
+- [ ] pagination
+- [ ] header
+- [ ] footer
+- [ ] styling
+- [ ] lint
+- [ ] jest
+- [ ] semantic release
+- [ ] github package
+- [ ] github actions
+- [ ] image hosting
