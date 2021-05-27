@@ -1,16 +1,18 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
 import {ReactElement} from 'react';
-import utilStyles from '../../styles/utils.module.css';
 import {Constants} from '../../utils';
+import {Image} from '../Image';
+import {NavButtonLink} from '../NavButtonLink';
+import {NavLink} from '../NavLink';
 import styles from './index.module.css';
 
+const year = new Date().getFullYear();
+
 type Props = {
-  children: ReactElement;
-  home?: boolean;
+  children: ReactElement | ReactElement[];
 };
-export const Layout = ({children, home}: Props) => {
+
+export const Layout = ({children}: Props) => {
   return (
     <div className={styles['container']}>
       <Head>
@@ -29,49 +31,38 @@ export const Layout = ({children, home}: Props) => {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles['header']}>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles['borderCircle']}
-              height={144}
-              width={144}
-            />
-            <h1 className={utilStyles['heading2Xl']}>{Constants.siteTitle}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  className={utilStyles['borderCircle']}
-                  height={108}
-                  width={108}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles['headingLg']}>
-              <Link href="/">
-                <a className={utilStyles['colorInherit']}>
-                  {Constants.siteTitle}
-                </a>
-              </Link>
-            </h2>
-          </>
-        )}
-      </header>
-      <main>{children}</main>
-      <footer>
-        {!home && (
-          <div className={styles['backToHome']}>
-            <Link href="/">
-              <a>← Back to home</a>
-            </Link>
+        <nav className={styles['nav']}>
+          <div className={styles['div']}>
+            <NavLink href="/">
+              <div className={styles.row}>
+                <Image src="/images/profile.jpg" size={20} alt="logo" />
+                <p>example</p>
+              </div>
+            </NavLink>
           </div>
-        )}
+          <ul className={styles.row}>
+            <li className={styles.li}>
+              <NavLink href="/">
+                <p>link</p>
+              </NavLink>
+            </li>
+            <li className={styles.li}>
+              <NavLink href="/">
+                <p>link</p>
+              </NavLink>
+            </li>
+            <li className={styles.li}>
+              <NavButtonLink href="/">
+                <p>action</p>
+              </NavButtonLink>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>{children}</main>
+      <footer className={styles['footer']}>
+        <p>example {year}</p>
       </footer>
     </div>
   );

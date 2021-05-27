@@ -1,14 +1,15 @@
 import Link from 'next/link';
+import {ReactElement} from 'react';
 
 type Props = {
   href: string;
-  title: string;
+  children: ReactElement;
 };
 
-export const NavLink = ({href, title}: Props) => {
+export const NavLink = ({href, children}: Props) => {
   return (
     <Link href={href}>
-      <a>{title}</a>
+      <a>{children}</a>
     </Link>
   );
 };

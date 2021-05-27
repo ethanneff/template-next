@@ -31,12 +31,14 @@ export default function Albums() {
   if (!data) return <div>loading...</div>;
   const payload = data.data;
   if (!isUsers(payload)) return <div>invalid data</div>;
+
   return (
     <Layout>
+      <Head>
+        <title>Albums</title>
+      </Head>
+      <h1>Albums</h1>
       <div>
-        <Head>
-          <title>Albums</title>
-        </Head>
         {payload.map(({id, email, first_name, last_name, avatar}) => (
           <div key={id}>
             {id} {email} {first_name} {last_name}
