@@ -1,17 +1,18 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import {ReactElement} from 'react';
 import utilStyles from '../../styles/utils.module.css';
 import {Constants} from '../../utils';
 import styles from './index.module.css';
 
 type Props = {
-  children: Node;
+  children: ReactElement;
   home?: boolean;
 };
 export const Layout = ({children, home}: Props) => {
   return (
-    <div className={styles.container}>
+    <div className={styles['container']}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -27,17 +28,17 @@ export const Layout = ({children, home}: Props) => {
         <meta name="og:title" content={Constants.siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className={styles['header']}>
         {home ? (
           <>
             <Image
               priority
               src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
+              className={utilStyles['borderCircle']}
               height={144}
               width={144}
             />
-            <h1 className={utilStyles.heading2Xl}>{Constants.siteTitle}</h1>
+            <h1 className={utilStyles['heading2Xl']}>{Constants.siteTitle}</h1>
           </>
         ) : (
           <>
@@ -46,15 +47,17 @@ export const Layout = ({children, home}: Props) => {
                 <Image
                   priority
                   src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
+                  className={utilStyles['borderCircle']}
                   height={108}
                   width={108}
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2 className={utilStyles['headingLg']}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{Constants.siteTitle}</a>
+                <a className={utilStyles['colorInherit']}>
+                  {Constants.siteTitle}
+                </a>
               </Link>
             </h2>
           </>
@@ -63,7 +66,7 @@ export const Layout = ({children, home}: Props) => {
       <main>{children}</main>
       <footer>
         {!home && (
-          <div className={styles.backToHome}>
+          <div className={styles['backToHome']}>
             <Link href="/">
               <a>← Back to home</a>
             </Link>

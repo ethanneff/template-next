@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev -p 3333",
     "build": "next build",
-    "start": "next start",
+    "export": "next export",
+    "start": "next start -p 3333",
     "lint": "tsc && eslint '**/*.[jt]s?(x)' --cache --fix",
     "test": "jest -u --forceExit --coverage --detectOpenHandles --config .github/jest.config.js",
     "watch": "jest -u --forceExit --detectOpenHandles --watchAll --config .github/jest.config.js",
