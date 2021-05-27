@@ -2,7 +2,7 @@ name: Deploy to Github Packages
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   deploy_to_github_packages:
