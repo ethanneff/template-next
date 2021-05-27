@@ -3,17 +3,15 @@ import {Layout, NavButtonLink} from '../components';
 
 export default function Home() {
   return (
-    <Layout home>
-      <div>
-        <Head>
-          <title>Home</title>
-        </Head>
-        <section>
-          <h1>Example Web Template</h1>
-          <p>A simple app to showcase the architecture for frontend apps</p>
-          <NavButtonLink title="View albums" href="/albums" />
-        </section>
-      </div>
+    <Layout>
+      <Head>
+        <title>Home</title>
+      </Head>
+      <h1>Example Web Template</h1>
+      <p>A simple app to showcase the architecture for frontend apps</p>
+      <NavButtonLink href="/albums">
+        <p>View albums</p>
+      </NavButtonLink>
     </Layout>
   );
 }

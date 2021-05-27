@@ -1,12 +1,12 @@
 import {useRouter} from 'next/router';
-import {MouseEvent} from 'react';
+import {MouseEvent, ReactElement} from 'react';
 
 type Props = {
-  title: string;
+  children: ReactElement;
   href: string;
 };
 
-export const NavButtonLink = ({href, title}: Props) => {
+export const NavButtonLink = ({href, children}: Props) => {
   const router = useRouter();
 
   const handleClick = (e: MouseEvent) => {
@@ -14,5 +14,5 @@ export const NavButtonLink = ({href, title}: Props) => {
     router.push(href);
   };
 
-  return <button onClick={handleClick}>{title}</button>;
+  return <button onClick={handleClick}>{children}</button>;
 };
