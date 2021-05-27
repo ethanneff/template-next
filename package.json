@@ -1,19 +1,40 @@
 {
   "name": "template-web",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3333",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "tsc && eslint '**/*.[jt]s?(x)' --cache --fix",
+    "test": "jest -u --forceExit --coverage --detectOpenHandles --config .github/jest.config.js",
+    "watch": "jest -u --forceExit --detectOpenHandles --watchAll --config .github/jest.config.js",
+    "semantic-release": "semantic-release -e .github/release.config.js",
+    "prettify": "prettier --write .",
+    "code-dupe": "jsinspect ./src",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "10.2.3",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "swr": "^0.5.6"
   },
   "devDependencies": {
     "@types/react": "17.0.8",
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/commit-analyzer": "8.0.1",
+    "@semantic-release/git": "9.0.0",
+    "@semantic-release/github": "7.2.3",
+    "@semantic-release/npm": "7.1.3",
+    "@semantic-release/release-notes-generator": "9.0.2",
+    "eslint": "7.27.0",
+    "husky": "6.0.0",
+    "jsinspect": "0.12.7",
+    "prettier": "2.3.0",
+    "semantic-release": "17.4.3",
     "typescript": "4.3.2"
   }
 }
