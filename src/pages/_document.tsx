@@ -7,7 +7,7 @@ import Document, {
 } from 'next/document';
 import {Constants} from '../utils';
 
-export default class DocumentRoute extends Document {
+class DocumentRoute extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
     return {...initialProps};
@@ -19,11 +19,15 @@ export default class DocumentRoute extends Document {
         <Head>
           <link href={Constants.fontFamily} rel="stylesheet" />
         </Head>
+
         <body>
           <Main />
+
           <NextScript />
         </body>
       </Html>
     );
   }
 }
+
+export default DocumentRoute;

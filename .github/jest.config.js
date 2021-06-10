@@ -1,18 +1,20 @@
 module.exports = {
-  preset: "react-native",
-  transform: {
-    ".+\\.(bmp|gif|jpg|jpeg|mp4|png|psd|svg|webp|ttf|otf|m4v|mov|mp4|mpeg|mpg|webm|aac|aiff|caf|m4a|mp3|wav|html|pdf|obj)$":
-      "<rootDir>/src/mocks/Files/index.js",
-  },
+  // collectCoverageFrom: [
+  //   '**/*.{js,jsx,ts,tsx}',
+  //   '!**/*.d.ts',
+  //   '!**/node_modules/**',
+  // ],
+  // setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  testPathIgnorePatterns: ['/node_modules/', '/.next/'],
   transformIgnorePatterns: [
-    "./node_modules/(?!(jest-)?react-native|@react-native-community|@react-navigation|@react-native-firebase|@react-native)",
+    '/node_modules/',
+    '^.+\\.module\\.(css|sass|scss)$',
   ],
-  setupFiles: [
-    "<rootDir>/node_modules/react-native-gesture-handler/jestSetup.js",
-    "<rootDir>/src/mocks/Setup/index.ts",
-  ],
-  rootDir: "../",
-  globals: {
-    window: {},
+  testEnvironment: 'jsdom',
+  moduleNameMapper: {
+    '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
+    '\\.(jpg|jpeg|png|gif)$': '<rootDir>/src/testing/fileMock.ts',
   },
+  setupFilesAfterEnv: ['<rootDir>/src/testing/setup.ts'],
+  rootDir: '..',
 };

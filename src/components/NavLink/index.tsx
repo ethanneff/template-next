@@ -6,10 +6,8 @@ type Props = {
   children: ReactElement;
 };
 
-export const NavLink = ({href, children}: Props) => {
-  return (
-    <Link href={href}>
-      <a>{children}</a>
-    </Link>
-  );
-};
+export const NavLink = ({href, children}: Props) => (
+  <Link href={href}>
+    <a>{children}</a>
+  </Link>
+);
