@@ -33,6 +33,22 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+# Tools
+
+| tool               | usage                                           | example                                                |
+| ------------------ | ----------------------------------------------- | ------------------------------------------------------ |
+| `next`             | react framework for client and server rendering | `yarn dev` `yarn start` `yarn build`                   |
+| `jest`             | react testing framework                         | `yarn test` `yarn watch`                               |
+| `eslint`           | code linting                                    | `yarn lint`                                            |
+| `prettier`         | code formatter                                  | `yarn prettify`                                        |
+| `typescript`       | code type safety                                | `yarn lint`                                            |
+| `commitlint`       | commit prefix validator                         |                                                        |
+| `normalize.css`    | standardize css across browsers                 |                                                        |
+| `semantic release` | automatic deploys and version control           | `yarn semantic-release`                                |
+| `github actions`   | pull request ci                                 |                                                        |
+| `redux-toolkit`    | cache client state                              | `const globalState = { themeMode, sidebarStatus }`     |
+| `swr`              | query and cache server state                    | `const { data, error } = useSWR('/api/user', fetcher)` |
+
 # TODO
 
 - [x] fav icon
