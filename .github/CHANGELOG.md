@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/ethanneff/template-web/compare/v1.0.3...v1.0.4) (2021-06-11)
+
+
+### Bug Fixes
+
+* create github pages script ([1284980](https://github.com/ethanneff/template-web/commit/1284980188cae19cbedde1dc07c176c1a200a74a))
+
 ## [1.0.3](https://github.com/ethanneff/template-web/compare/v1.0.2...v1.0.3) (2021-06-11)
 
 
