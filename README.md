@@ -69,7 +69,7 @@ Open [https://ethanneff.github.io/template-web/](https://ethanneff.github.io/tem
 - [x] semantic release
 - [ ] github package
 - [x] github actions
-- [ ] github pages
+- [x] github pages
 - [ ] image hosting
 - [ ] directory guide
 
