@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.0.8](https://github.com/ethanneff/template-web/compare/v1.0.7...v1.0.8) (2021-06-11)
+
+
+### Bug Fixes
+
+* collect jest coverage ([897e7b8](https://github.com/ethanneff/template-web/commit/897e7b84857a7f0937b201638e093794db31f19f))
+* ignore changelog in prettier ([04d1d45](https://github.com/ethanneff/template-web/commit/04d1d45ed782d3222d710bfa42f03bd4ec8762e6))
+* ignore estlint cache ([c3a1623](https://github.com/ethanneff/template-web/commit/c3a16239f774a4ef5c1d5cc3878b095ffd98dee4))
+* relocate release.config.js ([0def97b](https://github.com/ethanneff/template-web/commit/0def97b9bc101d30eabcbd9f700346f924c117d4))
+* remove all tsc warnings ([2bddadb](https://github.com/ethanneff/template-web/commit/2bddadb2fea0aa4fa5f657b774dcab1693fac1ae))
+* remove eslint cache ([90e3232](https://github.com/ethanneff/template-web/commit/90e3232ec2acb69b60b701724150d934742137b8))
+* remove license warning on tests ([ea73a6b](https://github.com/ethanneff/template-web/commit/ea73a6b37dc7de6e89c28ebd3193c93097fcd4ac))
+* remove react version warning in linting ([ef587ad](https://github.com/ethanneff/template-web/commit/ef587ad2717304c28f470d489cc95c79a1e41f97))
+* update readme to do typings better ([224d7f7](https://github.com/ethanneff/template-web/commit/224d7f7442d3290dfb33726ce83cdee87e3547a1))
+* update scripts to use ci scripts ([58b8cb3](https://github.com/ethanneff/template-web/commit/58b8cb3352213d68318ae7865f5f8bca0eaede42))
+
 ## [1.0.7](https://github.com/ethanneff/template-web/compare/v1.0.6...v1.0.7) (2021-06-11)
 
 ## [1.0.6](https://github.com/ethanneff/template-web/compare/v1.0.5...v1.0.6) (2021-06-11)
