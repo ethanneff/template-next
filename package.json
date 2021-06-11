@@ -1,7 +1,10 @@
 {
-  "name": "template-web",
+  "name": "@ethanneff/template-web",
   "version": "1.0.2",
   "private": true,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@ethanneff"
+  },
   "repository": "https://github.com/ethanneff/template-web",
   "scripts": {
     "dev": "next dev -p 3333",
