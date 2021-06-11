@@ -82,6 +82,7 @@ yarn test
 - [ ] image hosting
 - [ ] directory guide
 - [ ] type isPost better
+- [ ] codecov
 
 ## Additional Resources
 
