@@ -1,3 +1,4 @@
 out/
 .next/
 coverage/
+.github/CHANGELOG.md 
