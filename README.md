@@ -14,17 +14,26 @@ yarn install
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) for local development.
+```sh
+yarn lint
+```
+
+```sh
+yarn test
+```
+
+- Local development is done at [localhost:3333](http://localhost:3333)
 
 ## Contributing
 
-Code validation happens automatically through Git hooks an CI. Make sure your commit messages follow [commitlint guidelines](https://github.com/semantic-release/semantic-release#commit-message-format) as this determines the semver of the release.
+- Code validation happens automatically through Git hooks an CI.
+- Validate your commit with [commitlint guidelines](https://github.com/semantic-release/semantic-release#commit-message-format) as this determines the semver of the release.
 
 ## Deploying
 
-Deploying happens automatically after merging your code to main.
-
-Open [https://ethanneff.github.io/template-web/](https://ethanneff.github.io/template-web/) for production.
+- Deploying happens automatically after merging your code to the `main` branch.
+- View the production website at [github pages](https://ethanneff.github.io/template-web)
+- View the bundled package at [github packages](https://github.com/ethanneff/template-web/packages/840620)
 
 ## Tooling
 
@@ -67,15 +76,13 @@ Open [https://ethanneff.github.io/template-web/](https://ethanneff.github.io/tem
 - [x] lint
 - [x] jest
 - [x] semantic release
-- [ ] github package
+- [x] github package
 - [x] github actions
 - [x] github pages
 - [ ] image hosting
 - [ ] directory guide
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
+## Additional Resources
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
