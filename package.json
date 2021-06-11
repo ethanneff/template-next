@@ -2,6 +2,7 @@
   "name": "template-web",
   "version": "0.0.1",
   "private": true,
+  "repository": "https://github.com/ethanneff/template-web",
   "scripts": {
     "dev": "next dev -p 3333",
     "build": "next build",
