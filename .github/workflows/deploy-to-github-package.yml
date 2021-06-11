@@ -30,6 +30,7 @@ jobs:
       - name: Build Web
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: touch .nojekyll
         run: yarn build && yarn export
 
       - name: Deploy Web
