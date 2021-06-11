@@ -3,30 +3,30 @@
 ## Install
 
 ```sh
+git clone https://ethanneff.github.io/template-web/
+cd template-web
 yarn install
 ```
 
 ## Development
 
-Run locally
-
 ```sh
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) for local development.
 
 ## Contributing
 
-Code validation happens automatically through Git hooks an CI.
+Code validation happens automatically through Git hooks an CI. Make sure your commit messages follow [commitlint guidelines](https://github.com/semantic-release/semantic-release#commit-message-format) as this determines the semver of the release.
 
-Make sure your commit messages follow [commitlint guidelines](https://github.com/semantic-release/semantic-release#commit-message-format) as this determines the semver of the release.
-
-# Deploying
+## Deploying
 
 Deploying happens automatically after merging your code to main.
 
-# Tooling
+Open [https://ethanneff.github.io/template-web/](https://ethanneff.github.io/template-web/) for production.
+
+## Tooling
 
 | tool               | usage                                           | example                                                |
 | ------------------ | ----------------------------------------------- | ------------------------------------------------------ |
@@ -42,17 +42,17 @@ Deploying happens automatically after merging your code to main.
 | `redux-toolkit`    | cache client state                              | `const globalState = { themeMode, sidebarStatus }`     |
 | `swr`              | query and cache server state                    | `const { data, error } = useSWR('/api/user', fetcher)` |
 
-# Routing
+## Routing
 
-http://localhost:3333/
-http://localhost:3333/users
-http://localhost:3333/users/1
-http://localhost:3333/users/1/posts
-http://localhost:3333/users/1/posts/1
-http://localhost:3333/posts
-http://localhost:3333/posts/1
-http://localhost:3333/comments
-http://localhost:3333/comments/1
+- http://localhost:3333/
+- http://localhost:3333/users
+- http://localhost:3333/users/1
+- http://localhost:3333/users/1/posts
+- http://localhost:3333/users/1/posts/1
+- http://localhost:3333/posts
+- http://localhost:3333/posts/1
+- http://localhost:3333/comments
+- http://localhost:3333/comments/1
 
 # TODO
 
@@ -66,9 +66,10 @@ http://localhost:3333/comments/1
 - [ ] styling
 - [x] lint
 - [x] jest
-- [ ] semantic release
+- [x] semantic release
 - [ ] github package
-- [ ] github actions
+- [x] github actions
+- [ ] github pages
 - [ ] image hosting
 - [ ] directory guide
 
