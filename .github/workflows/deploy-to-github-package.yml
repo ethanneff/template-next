@@ -27,13 +27,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn semantic-release
 
-      - name: Allow Underscore Filenames
-        run: touch .nojekyll
-
       - name: Build Web
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn build && yarn export
+        run: touch .nojekyll && yarn build && yarn export
 
       - name: Deploy Web
         uses: peaceiris/actions-gh-pages@v3
