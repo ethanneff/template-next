@@ -20,12 +20,12 @@ jobs:
           node-version: 14
 
       - name: Install Dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn ci-install
 
       - name: Update Version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn semantic-release
+        run: yarn ci-release
 
       - name: Setup Github
         uses: actions/setup-node@v1

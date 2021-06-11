@@ -17,12 +17,12 @@ jobs:
           node-version: 14
 
       - name: Install Dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn ci-install
 
       - name: Build Web
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: touch .nojekyll && yarn build && yarn export
+        run: yarn ci-build
 
       - name: Deploy Web
         uses: peaceiris/actions-gh-pages@v3

@@ -10,12 +10,16 @@
     "build": "next build",
     "export": "next export",
     "start": "next start -p 3333",
-    "lint": "tsc && eslint '**/*.[jt]s?(x)' --cache --fix",
-    "test": "jest -u --forceExit --coverage --detectOpenHandles --config .github/jest.config.js",
-    "watch": "jest -u --forceExit --detectOpenHandles --watchAll --config .github/jest.config.js",
-    "prettify": "prettier --write .",
-    "code-dupe": "jsinspect ./src",
-    "prepare": "husky install"
+    "lint": "tsc && eslint '**/*.[jt]s?(x)' --cache --fix --max-warnings=0",
+    "test": "jest -u --coverage --config .github/jest.config.js",
+    "watch": "jest -u --watchAll --config .github/jest.config.js",
+    "prepare": "husky install",
+    "ci-prettify": "prettier --write . && jsinspect ./src",
+    "ci-install": "yarn install --frozen-lockfile",
+    "ci-build": "touch .nojekyll && yarn build && yarn export",
+    "ci-lint": "tsc && eslint '**/*.[jt]s?(x)' --cache --max-warnings=0",
+    "ci-test": "TZ=America/Los_Angeles jest --ci --forceExit --detectOpenHandles --silent --coverage --config .github/jest.config.js",
+    "ci-release": "semantic-release -e ./.github/release.config.js"
   },
   "dependencies": {
     "next": "10.2.3",
