@@ -81,6 +81,7 @@ yarn test
 - [x] github pages
 - [ ] image hosting
 - [ ] directory guide
+- [ ] codecov
 
 ## Additional Resources
 
