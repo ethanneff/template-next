@@ -1,8 +1,5 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-  },
+  env: {browser: true, es2021: true},
   extends: [
     'plugin:react/all',
     'plugin:jest/all',
@@ -13,12 +10,11 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
+    ecmaFeatures: {jsx: true},
     ecmaVersion: 12,
     sourceType: 'module',
   },
+  settings: {react: {version: 'detect'}},
   plugins: ['react', 'react-hooks', '@typescript-eslint'],
   rules: {
     // Added
