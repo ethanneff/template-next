@@ -10,7 +10,6 @@
     "lint": "tsc && eslint '**/*.[jt]s?(x)' --cache --fix",
     "test": "jest -u --forceExit --coverage --detectOpenHandles --config .github/jest.config.js",
     "watch": "jest -u --forceExit --detectOpenHandles --watchAll --config .github/jest.config.js",
-    "semantic-release": "semantic-release -e .github/release.config.js",
     "prettify": "prettier --write .",
     "code-dupe": "jsinspect ./src",
     "prepare": "husky install"

@@ -24,7 +24,7 @@ Make sure your commit messages follow [commitlint guidelines](https://github.com
 
 # Deploying
 
-Deploying happens automatically after merging your code to master.
+Deploying happens automatically after merging your code to main.
 
 # Tooling
 
