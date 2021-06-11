@@ -1,0 +1,12 @@
+version = 1
+
+[merge]
+
+automerge_label = ['automerge']
+method = 'squash'
+delete_branch_on_merge = true
+
+[merge.message]
+
+title = 'squash'
+body = 'empty'
