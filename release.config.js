@@ -22,12 +22,23 @@ module.exports = {
       },
     ],
     '@semantic-release/release-notes-generator',
-    '@semantic-release/npm',
-    '@semantic-release/github',
+    [
+      '@semantic-release/npm',
+      {
+        npmPublish: false,
+      },
+    ],
+    [
+      '@semantic-release/github',
+      {
+        successComment: false,
+        failComment: false,
+      },
+    ],
     [
       '@semantic-release/changelog',
       {
-        changelogFile: 'docs/CHANGELOG.md',
+        changelogFile: '.github/CHANGELOG.md',
         changelogTitle: '# Changelog',
       },
     ],
@@ -35,8 +46,7 @@ module.exports = {
       '@semantic-release/git',
       {
         assets: ['docs', 'package.json'],
-        message:
-          'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
+        message: 'chore(release): ${nextRelease.version} [skip ci]',
       },
     ],
   ],
