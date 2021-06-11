@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/ethanneff/template-web/compare/v1.0.4...v1.0.5) (2021-06-11)
+
+
+### Bug Fixes
+
+* don't make package private ([c07a2b2](https://github.com/ethanneff/template-web/commit/c07a2b2158f169f92e0694baa579258c1c6f5106))
+
 ## [1.0.4](https://github.com/ethanneff/template-web/compare/v1.0.3...v1.0.4) (2021-06-11)
 
 
