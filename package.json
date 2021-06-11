@@ -5,6 +5,7 @@
     "registry": "https://npm.pkg.github.com/@ethanneff"
   },
   "repository": "https://github.com/ethanneff/template-web",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev -p 3333",
     "build": "next build",
