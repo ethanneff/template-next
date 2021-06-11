@@ -1,6 +1,6 @@
 {
   "name": "template-web",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "repository": "https://github.com/ethanneff/template-web",
   "scripts": {
