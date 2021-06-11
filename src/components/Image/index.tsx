@@ -1,4 +1,5 @@
 import Original from 'next/image';
+import {ReactElement} from 'react';
 
 type Props = {
   src: string;
@@ -6,6 +7,6 @@ type Props = {
   alt: string;
 };
 
-export const Image = ({src, size, alt}: Props) => {
-  return <Original priority src={src} height={size} width={size} alt={alt} />;
-};
+export const Image = ({src, size, alt}: Props): ReactElement => (
+  <Original alt={alt} height={size} priority src={src} width={size} />
+);

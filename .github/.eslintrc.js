@@ -58,4 +58,7 @@ module.exports = {
   settings: {
     'import/ignore': ['react-native'],
   },
+  env: {
+    jest: true,
+  },
 };
