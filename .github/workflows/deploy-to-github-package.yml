@@ -24,12 +24,12 @@ jobs:
 
       - name: Update Version
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSIST_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn semantic-release
 
       - name: Build Web
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSIST_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn build && yarn export
 
       - name: Deploy Web
