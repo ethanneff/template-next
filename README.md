@@ -64,8 +64,8 @@ http://localhost:3333/comments/1
 - [ ] footer
 - [ ] fix loading issue
 - [ ] styling
-- [ ] lint
-- [ ] jest
+- [x] lint
+- [x] jest
 - [ ] semantic release
 - [ ] github package
 - [ ] github actions

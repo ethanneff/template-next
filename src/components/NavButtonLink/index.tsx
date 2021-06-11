@@ -6,7 +6,7 @@ type Props = {
   href: string;
 };
 
-export const NavButtonLink = ({href, children}: Props) => {
+export const NavButtonLink = ({href, children}: Props): ReactElement => {
   const router = useRouter();
 
   const handleClick = useCallback(
