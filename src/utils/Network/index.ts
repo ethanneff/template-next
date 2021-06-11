@@ -1,1 +1,2 @@
-export const fetchJson = (url: string) => fetch(url).then((res) => res.json());
+export const fetchJson = (url: string): Promise<Response> =>
+  fetch(url).then((res) => res.json());

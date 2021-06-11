@@ -1,7 +1,8 @@
 import Head from 'next/head';
+import {ReactElement} from 'react';
 import {Layout, NavButtonLink} from '../../../../components';
 
-export const HomePage = () => (
+export const HomePage = (): ReactElement => (
   <Layout>
     <Head>
       <title>Home</title>

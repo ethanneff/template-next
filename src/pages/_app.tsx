@@ -1,9 +1,11 @@
 import {AppProps} from 'next/app';
 import 'normalize.css';
+import {ReactElement} from 'react';
 import '../styles/global.css';
 
-const AppRoute = ({Component, pageProps}: AppProps) => {
-  return <Component {...pageProps} />; // eslint-disable-line react/jsx-props-no-spreading
+/* eslint-disable react/jsx-props-no-spreading */
+const AppRoute = ({Component, pageProps}: AppProps): ReactElement => {
+  return <Component {...pageProps} />;
 };
 
 export default AppRoute;

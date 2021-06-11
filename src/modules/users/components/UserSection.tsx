@@ -1,3 +1,4 @@
+import {ReactElement} from 'react';
 import {NavLink} from '../../../components';
 
 type Props = {
@@ -7,7 +8,7 @@ type Props = {
   phone: string;
 };
 
-export const UserSection = ({id, name, email, phone}: Props) => (
+export const UserSection = ({id, name, email, phone}: Props): ReactElement => (
   <div key={id}>
     {id} {email} {name} {phone}
     <NavLink href="/posts">

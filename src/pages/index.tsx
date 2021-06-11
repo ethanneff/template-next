@@ -1,6 +1,7 @@
+import {ReactElement} from 'react';
 import {HomePage} from '../modules/home/pages/HomePage';
 
-const HomeRoute = () => {
+const HomeRoute = (): ReactElement => {
   return <HomePage />;
 };
 

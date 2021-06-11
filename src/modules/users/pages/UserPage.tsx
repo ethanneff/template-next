@@ -1,12 +1,13 @@
 import Head from 'next/head';
 import {useRouter} from 'next/router';
+import {ReactElement} from 'react';
 import useSWR from 'swr';
 import {Layout} from '../../../components';
 import {Constants, fetchJson} from '../../../utils';
 import {UserSection} from '../components/UserSection';
 import {isUser} from '../utils';
 
-export const UserPage = () => {
+export const UserPage = (): ReactElement => {
   const router = useRouter();
   const {userId} = router.query;
   const {data, error} = useSWR(

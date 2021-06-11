@@ -1,6 +1,7 @@
+import {ReactElement} from 'react';
 import {PostPage} from '../../modules/posts/pages/PostPage';
 
-const PostRoute = () => {
+const PostRoute = (): ReactElement => {
   return <PostPage />;
 };
 

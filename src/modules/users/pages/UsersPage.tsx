@@ -1,11 +1,12 @@
 import Head from 'next/head';
+import {ReactElement} from 'react';
 import useSWR from 'swr';
 import {Layout} from '../../../components';
 import {Constants, fetchJson} from '../../../utils';
 import {UserSection} from '../components/UserSection';
 import {isUsers} from '../utils';
 
-export const UsersPage = () => {
+export const UsersPage = (): ReactElement => {
   const {data, error} = useSWR(`${Constants.baseUrl}/users`, fetchJson);
 
   if (error) return <div>failed to load</div>;

@@ -1,12 +1,13 @@
 import Head from 'next/head';
 import {useRouter} from 'next/router';
+import {ReactElement} from 'react';
 import useSWR from 'swr';
 import {Layout, NavLink} from '../../../components';
 import {Constants, fetchJson} from '../../../utils';
 import {PostSection} from '../components/PostSection';
 import {isPosts} from '../utils';
 
-export const PostsPage = () => {
+export const PostsPage = (): ReactElement => {
   const router = useRouter();
   const {userId} = router.query;
   const path = userId ? `posts?userId=${userId}` : 'posts';
