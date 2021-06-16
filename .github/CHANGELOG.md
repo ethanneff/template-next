@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.1.0](https://github.com/ethanneff/template-web/compare/v1.0.9...v1.1.0) (2021-06-16)
+
+
+### Bug Fixes
+
+* add next lint ([ce99ddf](https://github.com/ethanneff/template-web/commit/ce99ddf63eaf31ad9cb8110cb6843d425eeaf22c))
+
+
+### Features
+
+* add comments ([7f9521a](https://github.com/ethanneff/template-web/commit/7f9521a4782d71a674e5ea91b4fc0e6495e6ca90))
+
 ## [1.0.9](https://github.com/ethanneff/template-web/compare/v1.0.8...v1.0.9) (2021-06-16)
 
 
