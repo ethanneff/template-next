@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.9](https://github.com/ethanneff/template-web/compare/v1.0.8...v1.0.9) (2021-06-16)
+
+
+### Bug Fixes
+
+* add caching to tests ([90158ac](https://github.com/ethanneff/template-web/commit/90158ac78d2a10047b143def23e2d73b81e47225))
+* add stale ([098763a](https://github.com/ethanneff/template-web/commit/098763a1c6ddcbbd2abe86dfcc64d0bf429b76d7))
+* run ci-install ([56a4912](https://github.com/ethanneff/template-web/commit/56a49128ad02fb61ea67618daad240cd0c81e5a0))
+* run dupe on pr ([5218fd4](https://github.com/ethanneff/template-web/commit/5218fd4bf92162598c95bbed4cf43c11629cffe5))
+* separate dupe and prettier ([17b3f94](https://github.com/ethanneff/template-web/commit/17b3f942cc8f01cfc788e3a908539a37b1b70b72))
+
 ## [1.0.8](https://github.com/ethanneff/template-web/compare/v1.0.7...v1.0.8) (2021-06-11)
 
 
