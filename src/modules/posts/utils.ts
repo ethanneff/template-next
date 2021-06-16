@@ -8,9 +8,4 @@ export const isPost = (data: unknown): data is Post =>
   typeof (data as Post).body === 'string';
 
 export const isPosts = (data: unknown): data is Posts =>
-  Array.isArray(data) &&
-  data.length > 0 &&
-  typeof (data[0] as Post).id === 'number' &&
-  typeof (data[0] as Post).userId === 'number' &&
-  typeof (data[0] as Post).title === 'string' &&
-  typeof (data[0] as Post).body === 'string';
+  Array.isArray(data) && data.every(isPost);

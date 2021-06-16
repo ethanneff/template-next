@@ -1,5 +1,5 @@
 import {ReactElement} from 'react';
-import {HomePage} from '../modules/home/pages/HomePage';
+import {HomePage} from '../modules/home/HomePage';
 
 const HomeRoute = (): ReactElement => {
   return <HomePage />;

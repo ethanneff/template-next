@@ -23,10 +23,8 @@ class DocumentRoute extends Document {
         <Head>
           <link href={Constants.fontFamily} rel="stylesheet" />
         </Head>
-
         <body>
           <Main />
-
           <NextScript />
         </body>
       </Html>

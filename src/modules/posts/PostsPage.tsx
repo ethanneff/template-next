@@ -2,10 +2,10 @@ import Head from 'next/head';
 import {useRouter} from 'next/router';
 import {ReactElement} from 'react';
 import useSWR from 'swr';
-import {Layout, NavLink} from '../../../components';
-import {Constants, fetchJson} from '../../../utils';
-import {PostSection} from '../components/PostSection';
-import {isPosts} from '../utils';
+import {Layout, NavLink} from '../../components';
+import {Constants, fetchJson} from '../../utils';
+import {PostSection} from './PostSection';
+import {isPosts} from './utils';
 
 export const PostsPage = (): ReactElement => {
   const router = useRouter();
@@ -22,14 +22,11 @@ export const PostsPage = (): ReactElement => {
       <Head>
         <title>Posts</title>
       </Head>
-
       <h1>Posts</h1>
-
       <div>
         {data.map(({id, title, body}) => (
           <div key={id}>
             <PostSection body={body} id={id} title={title} />
-
             <NavLink href={`/posts/${id}`}>
               <p>Post</p>
             </NavLink>
