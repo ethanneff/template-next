@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/ethanneff/template-web/compare/v1.1.0...v1.1.1) (2021-06-16)
+
+
+### Bug Fixes
+
+* build images ([1656262](https://github.com/ethanneff/template-web/commit/1656262481022312b94b35faf5a7fb8b17ca839d))
+
 # [1.1.0](https://github.com/ethanneff/template-web/compare/v1.0.9...v1.1.0) (2021-06-16)
 
 
