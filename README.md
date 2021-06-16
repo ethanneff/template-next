@@ -8,7 +8,7 @@ cd template-web
 yarn install
 ```
 
-## Development
+## Development Local
 
 ```sh
 yarn dev
@@ -23,6 +23,18 @@ yarn test
 ```
 
 - Local development is done at [localhost:3333](http://localhost:3333)
+
+## Development Local Prod
+
+```sh
+yarn build
+```
+
+```sh
+yarn start
+```
+
+- Local development production is done at [localhost:3333/template-web](http://localhost:3333/template-web)
 
 ## Contributing
 
