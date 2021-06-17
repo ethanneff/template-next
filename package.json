@@ -20,7 +20,7 @@
     "ci-install": "yarn install --frozen-lockfile",
     "ci-build": "touch .nojekyll && yarn build && yarn export",
     "ci-lint": "tsc && eslint '**/*.[jt]s?(x)' --cache --max-warnings=0",
-    "ci-test": "TZ=America/Los_Angeles jest --ci --forceExit --detectOpenHandles --silent --coverage --config .github/jest.config.js",
+    "ci-test": "TZ=America/Los_Angeles jest --ci --forceExit --detectOpenHandles --silent --coverage --coverageReporters=text-summary --config .github/jest.config.js",
     "ci-release": "semantic-release -e ./.github/release.config.js"
   },
   "dependencies": {
