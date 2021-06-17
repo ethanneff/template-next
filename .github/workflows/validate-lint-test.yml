@@ -1,6 +1,8 @@
 name: Validate Lint and Test
 
-on: push
+on:
+  pull_request:
+    branches: [main]
 
 jobs:
   build:
@@ -20,7 +22,5 @@ jobs:
       - name: Run test
         run: yarn ci-test
 
-      - name: Run Coverage
-        uses: raulanatol/jest-coverage-comment-action@v1.1.1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run coverage
+        uses: mattallty/jest-github-action@v1
