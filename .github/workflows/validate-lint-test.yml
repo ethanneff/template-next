@@ -23,6 +23,6 @@ jobs:
         run: yarn ci-test
 
       - name: Run coverage
-        uses: raulanatol/jest-coverage-comment-action@v1
+        uses: dkershner6/jest-coverage-commenter-action@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}'
+          github_token: '${{ secrets.GITHUB_TOKEN }}'
