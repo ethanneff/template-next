@@ -81,19 +81,23 @@ yarn start
 - [x] users
 - [x] posts
 - [x] comments
-- [ ] header
-- [ ] footer
-- [ ] fix loading issue
-- [ ] styling
+
 - [x] lint
 - [x] jest
 - [x] semantic release
 - [x] github package
 - [x] github actions
 - [x] github pages
-- [ ] image hosting
+- [x] type isPost better
+
+- [ ] header
+- [ ] footer
+- [ ] styling
+- [ ] fix loading issue
 - [ ] directory guide
-- [ ] type isPost better
+
+- [ ] redux
+- [ ] image hosting
 - [ ] codecov
 
 ## Additional Resources
