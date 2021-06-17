@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/ethanneff/template-web/compare/v1.1.1...v1.1.2) (2021-06-17)
+
+
+### Bug Fixes
+
+* attempt pr coverage ([#7](https://github.com/ethanneff/template-web/issues/7)) ([3d4cf11](https://github.com/ethanneff/template-web/commit/3d4cf114456dc6f96e6a62bb28d3ac80366fcc34))
+
 ## [1.1.1](https://github.com/ethanneff/template-web/compare/v1.1.0...v1.1.1) (2021-06-16)
 
 
