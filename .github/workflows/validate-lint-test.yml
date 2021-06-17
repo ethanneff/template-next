@@ -5,6 +5,8 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -15,5 +17,5 @@ jobs:
       - name: Run lint
         run: yarn ci-lint
 
-      - name: Run tests
-        run: yarn ci-test
+      - name: Run test coverage
+        uses: mattallty/jest-github-action@v1
