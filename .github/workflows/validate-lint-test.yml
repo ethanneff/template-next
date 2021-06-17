@@ -19,8 +19,10 @@ jobs:
       - name: Run lint
         run: yarn ci-lint
 
-      - name: Run test coverage
-        uses: ziishaned/jest-reporter-action@v0
+      - name: Run test
+        run: yarn ci-test
+
+      - name: Run coverage
+        uses: raulanatol/jest-coverage-comment-action@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          test-command: yarn ci-test
+          github-token: ${{ secrets.GITHUB_TOKEN }}'
