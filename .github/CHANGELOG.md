@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/ethanneff/template-web/compare/v1.1.2...v1.1.3) (2021-06-23)
+
+
+### Bug Fixes
+
+* update deps ([f47955c](https://github.com/ethanneff/template-web/commit/f47955cfb66ca913d6c987bc2c531d41f7258f8d))
+
 ## [1.1.2](https://github.com/ethanneff/template-web/compare/v1.1.1...v1.1.2) (2021-06-17)
 
 
