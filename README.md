@@ -47,6 +47,31 @@ yarn start
 - View the production website at [github pages](https://ethanneff.github.io/template-web)
 - View the bundled package at [github packages](https://github.com/ethanneff/template-web/packages/840620)
 
+## File Structure
+
+```ts
+.
+├── .github
+│   ├── workflow      // remote ci scripts
+│   ├── CHANGELOG.md  // change log
+│   ├── *.config.json // development configs
+├── .husky            // local ci scripts
+├── .vscode           // IDE configs
+├── out               // production build
+├── public            // public assets
+│   └── images        // optimized images
+└── src               // javascript code
+    ├── components    // ui components
+    ├── modules       // screens
+    ├── pages         // routing (each file is a new route)
+    ├── redux         // clint-side event cache
+    ├── styles        // css
+    ├── testing       // testing functions for mocks, factories, setup
+    └── utils         // global utility/helper functions
+├── README.md         //
+├── *.config.json     // development configs
+```
+
 ## Tooling
 
 | tool               | usage                                           | example                                                |
@@ -70,6 +95,8 @@ yarn start
 - http://localhost:3333/users/1
 - http://localhost:3333/users/1/posts
 - http://localhost:3333/users/1/posts/1
+- http://localhost:3333/users/1/comments
+- http://localhost:3333/users/1/comments/1
 - http://localhost:3333/posts
 - http://localhost:3333/posts/1
 - http://localhost:3333/comments
@@ -94,11 +121,11 @@ yarn start
 - [ ] footer
 - [ ] styling
 - [ ] fix loading issue
-- [ ] directory guide
+- [x] directory guide
 
 - [ ] redux
 - [ ] image hosting
-- [ ] codecov
+- [x] codecov
 
 ## Additional Resources
 
