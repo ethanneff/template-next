@@ -35,7 +35,7 @@ export const Layout = ({children}: Props): ReactElement => {
           <div className={styles.div}>
             <NavLink href="/">
               <div className={styles.row}>
-                <Image alt="logo" size={40} src="/images/profile.jpg" />
+                <Image alt="logo" size={40} src="/images/profile.webp" />
                 <p>example</p>
               </div>
             </NavLink>

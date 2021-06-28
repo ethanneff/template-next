@@ -21,7 +21,7 @@ class DocumentRoute extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link href={Constants.fontFamily} rel="stylesheet" />
+          <link href={Constants.fontFamily} media="all" rel="stylesheet" />
         </Head>
         <body>
           <Main />

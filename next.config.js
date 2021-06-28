@@ -1,11 +1,11 @@
+const path = '/template-web';
 const prod = process.env.NODE_ENV === 'production';
-const basePath = prod ? '/template-web' : '';
 
 module.exports = {
-  basePath,
-  assetPrefix: `${basePath}/`,
+  basePath: prod ? path : '',
+  // assetPrefix: prod ? path : '/',
   images: {
     loader: prod ? 'imgix' : '',
-    path: basePath,
+    path: prod ? path : null,
   },
 };

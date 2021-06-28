@@ -126,6 +126,9 @@ yarn start
 - [ ] redux
 - [ ] image hosting
 - [x] codecov
+- [ ] danger
+- [ ] lighthouse
+- [ ] 80% jest
 
 ## Additional Resources
 
