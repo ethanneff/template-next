@@ -6,5 +6,6 @@ module.exports = {
   assetPrefix: `${basePath}/`,
   images: {
     loader: prod ? 'imgix' : '',
+    path: basePath,
   },
 };
