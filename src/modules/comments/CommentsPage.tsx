@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import {Layout} from '../../components';
-import {CommentsBody} from './CommentsBody';
+import {CommentsPageBody} from './CommentsPageBody';
 
 export const CommentsPage = (): JSX.Element => {
   return (
@@ -8,8 +8,7 @@ export const CommentsPage = (): JSX.Element => {
       <Head>
         <title>Comments</title>
       </Head>
-      <h1>Comments</h1>
-      <CommentsBody />
+      <CommentsPageBody />
     </Layout>
   );
 };

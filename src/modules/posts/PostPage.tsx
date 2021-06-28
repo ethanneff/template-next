@@ -10,7 +10,7 @@ export const PostPage = (): JSX.Element => {
   return (
     <Layout>
       <Head>
-        <title>Post {postId} </title>
+        <title>Post {postId}</title>
       </Head>
       <PostPageBody />
     </Layout>

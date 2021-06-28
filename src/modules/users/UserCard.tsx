@@ -25,12 +25,8 @@ export const UserCard = ({id, name, email, phone}: Props): JSX.Element => {
             <a href={`tel:${tele}`}>{tele}</a>
           </div>
           <div className={utilStyles.flex}>
-            <NavLink href="/posts">
+            <NavLink href={`/posts?userId=${id}`}>
               <span>🪧 Posts</span>
-            </NavLink>
-            <span>|</span>
-            <NavLink href="/comments">
-              <span>💬 Comments</span>
             </NavLink>
           </div>
         </div>

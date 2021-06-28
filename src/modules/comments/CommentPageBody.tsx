@@ -1,10 +1,10 @@
 import {useRouter} from 'next/router';
 import useSWR from 'swr';
-import utilStyles from '../../styles/utils.module.css';
 import {Constants, fetchJson} from '../../utils';
+import {CommentCard} from './CommentCard';
 import {isComment} from './utils';
 
-export const CommentBody = (): JSX.Element => {
+export const CommentPageBody = (): JSX.Element => {
   const router = useRouter();
   const {commentId} = router.query;
   const url = `${Constants.baseUrl}/comments/${commentId}`;
@@ -14,10 +14,18 @@ export const CommentBody = (): JSX.Element => {
   if (!data) return <div>loading...</div>;
   if (!isComment(data)) return <div>invalid data</div>;
 
-  const {id, postId, name, email, body} = data;
+  const {id, name, email, body, postId} = data;
   return (
-    <div className={utilStyles.card}>
-      {id} {postId} {name} {email} {body}
-    </div>
+    <>
+      <h1>Comment {commentId}</h1>
+      <CommentCard
+        body={body}
+        email={email}
+        hideLink
+        id={id}
+        name={name}
+        postId={postId}
+      />
+    </>
   );
 };

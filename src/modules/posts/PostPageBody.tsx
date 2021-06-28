@@ -1,6 +1,7 @@
 import {useRouter} from 'next/router';
 import useSWR from 'swr';
 import {Constants, fetchJson} from '../../utils';
+import {CommentsPageBody} from '../comments/CommentsPageBody';
 import {PostCard} from './PostCard';
 import {isPost} from './utils';
 
@@ -18,7 +19,8 @@ export const PostPageBody = (): JSX.Element => {
   return (
     <>
       <h1>Post {postId}</h1>
-      <PostCard body={body} id={id} title={title} userId={userId} />
+      <PostCard body={body} hideNav id={id} title={title} userId={userId} />
+      <CommentsPageBody />
     </>
   );
 };

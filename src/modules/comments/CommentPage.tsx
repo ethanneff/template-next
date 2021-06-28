@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import {useRouter} from 'next/router';
 import {Layout} from '../../components';
-import {CommentBody} from './CommentBody';
+import {CommentPageBody} from './CommentPageBody';
 
 export const CommentPage = (): JSX.Element => {
   const router = useRouter();
@@ -12,8 +12,7 @@ export const CommentPage = (): JSX.Element => {
       <Head>
         <title>Comment {commentId}</title>
       </Head>
-      <h1>Comment {commentId}</h1>
-      <CommentBody />
+      <CommentPageBody />
     </Layout>
   );
 };

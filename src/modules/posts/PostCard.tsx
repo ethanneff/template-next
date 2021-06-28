@@ -7,9 +7,16 @@ type Props = {
   title: string;
   body: string;
   userId: number;
+  hideNav?: boolean;
 };
 
-export const PostCard = ({id, title, body, userId}: Props): JSX.Element => {
+export const PostCard = ({
+  id,
+  title,
+  body,
+  userId,
+  hideNav,
+}: Props): JSX.Element => {
   return (
     <div className={utilStyles.card} key={id}>
       <div className={utilStyles.center}>
@@ -17,9 +24,11 @@ export const PostCard = ({id, title, body, userId}: Props): JSX.Element => {
         <div>
           <h2 style={{textTransform: 'capitalize'}}>{title}</h2>
           <p>{body}</p>
-          <NavLink href={`/posts/${id}`}>
-            <span>🪧 Post {id}</span>
-          </NavLink>
+          {!hideNav && (
+            <NavLink href={`/posts/${id}`}>
+              <span>🪧 Post Detail</span>
+            </NavLink>
+          )}
         </div>
       </div>
     </div>
