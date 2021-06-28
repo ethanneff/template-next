@@ -19,7 +19,7 @@ class DocumentRoute extends Document {
 
   render(): ReactElement {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <link href={Constants.fontFamily} rel="stylesheet" />
         </Head>
