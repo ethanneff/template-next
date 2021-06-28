@@ -121,13 +121,13 @@ yarn start
 - [x] image hosting
 - [x] codecov
 
-- [ ] header
-- [ ] footer
-- [ ] styling
-- [ ] fix loading issue
+- [x] header
+- [x] footer
+- [x] styling
+- [x] fix loading issue
 - [ ] redux
 - [ ] 80% jest
-- [ ] sample PR
+- [x] sample PR
 
 - [ ] danger
 - [ ] lighthouse
