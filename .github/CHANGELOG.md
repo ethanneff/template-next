@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.6](https://github.com/ethanneff/template-web/compare/v1.1.5...v1.1.6) (2021-06-28)
+
+
+### Bug Fixes
+
+* correct lighthouse issue ([cdcbdd8](https://github.com/ethanneff/template-web/commit/cdcbdd87808ecdc73490fa2cfb56b032fe9d269f))
+* potentially fix images ([93324c7](https://github.com/ethanneff/template-web/commit/93324c7db09716c1044232051ddd0779dd0e851f))
+
 ## [1.1.5](https://github.com/ethanneff/template-web/compare/v1.1.4...v1.1.5) (2021-06-27)
 
 
