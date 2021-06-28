@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.5](https://github.com/ethanneff/template-web/compare/v1.1.4...v1.1.5) (2021-06-27)
+
+
+### Bug Fixes
+
+* add file structure ([4b811fc](https://github.com/ethanneff/template-web/commit/4b811fc722ea0b0f2dcd5621f8377830c0df9eba))
+* update deps ([5776934](https://github.com/ethanneff/template-web/commit/5776934cd5244ddbfa53e326536569e824b558ff))
+
 ## [1.1.4](https://github.com/ethanneff/template-web/compare/v1.1.3...v1.1.4) (2021-06-23)
 
 ## [1.1.3](https://github.com/ethanneff/template-web/compare/v1.1.2...v1.1.3) (2021-06-23)
