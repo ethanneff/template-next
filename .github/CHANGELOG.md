@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.8](https://github.com/ethanneff/template-web/compare/v1.1.7...v1.1.8) (2021-06-28)
+
+
+### Bug Fixes
+
+* make package work again ([a909fb5](https://github.com/ethanneff/template-web/commit/a909fb501a3eba3a43c457bf163ceba443e5c3ab))
+
 ## [1.1.7](https://github.com/ethanneff/template-web/compare/v1.1.6...v1.1.7) (2021-06-28)
 
 
