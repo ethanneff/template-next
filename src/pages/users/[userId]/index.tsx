@@ -1,7 +1,6 @@
-import {ReactElement} from 'react';
 import {UserPage} from '../../../modules/users/UserPage';
 
-const UserRoute = (): ReactElement => {
+const UserRoute = (): JSX.Element => {
   return <UserPage />;
 };
 

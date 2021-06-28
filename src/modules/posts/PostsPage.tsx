@@ -1,38 +1,14 @@
 import Head from 'next/head';
-import {useRouter} from 'next/router';
-import {ReactElement} from 'react';
-import useSWR from 'swr';
-import {Layout, NavLink} from '../../components';
-import {Constants, fetchJson} from '../../utils';
-import {PostSection} from './PostSection';
-import {isPosts} from './utils';
+import {Layout} from '../../components';
+import {PostsPageBody} from './PostsPageBody';
 
-export const PostsPage = (): ReactElement => {
-  const router = useRouter();
-  const {userId} = router.query;
-  const path = userId ? `posts?userId=${userId}` : 'posts';
-  const {data, error} = useSWR(`${Constants.baseUrl}/${path}`, fetchJson);
-
-  if (error) return <div>failed to load</div>;
-  if (!data) return <div>loading...</div>;
-  if (!isPosts(data)) return <div>invalid data</div>;
-
+export const PostsPage = (): JSX.Element => {
   return (
     <Layout>
       <Head>
         <title>Posts</title>
       </Head>
-      <h1>Posts</h1>
-      <div>
-        {data.map(({id, title, body}) => (
-          <div key={id}>
-            <PostSection body={body} id={id} title={title} />
-            <NavLink href={`/posts/${id}`}>
-              <p>Post</p>
-            </NavLink>
-          </div>
-        ))}
-      </div>
+      <PostsPageBody />
     </Layout>
   );
 };

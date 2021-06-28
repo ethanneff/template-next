@@ -6,7 +6,6 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document';
-import {ReactElement} from 'react';
 import {Constants} from '../utils';
 
 class DocumentRoute extends Document {
@@ -17,7 +16,7 @@ class DocumentRoute extends Document {
     return {...initialProps};
   }
 
-  render(): ReactElement {
+  render(): JSX.Element {
     return (
       <Html lang="en">
         <Head>

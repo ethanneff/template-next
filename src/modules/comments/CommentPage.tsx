@@ -1,10 +1,9 @@
 import Head from 'next/head';
 import {useRouter} from 'next/router';
-import {ReactElement} from 'react';
 import {Layout} from '../../components';
 import {CommentBody} from './CommentBody';
 
-export const CommentPage = (): ReactElement => {
+export const CommentPage = (): JSX.Element => {
   const router = useRouter();
   const {commentId} = router.query;
 

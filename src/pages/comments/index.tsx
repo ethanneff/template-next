@@ -1,7 +1,6 @@
-import {ReactElement} from 'react';
 import {CommentsPage} from '../../modules/comments/CommentsPage';
 
-const CommentsRoute = (): ReactElement => {
+const CommentsRoute = (): JSX.Element => {
   return <CommentsPage />;
 };
 

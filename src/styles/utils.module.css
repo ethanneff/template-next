@@ -1,3 +1,22 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  padding: 16px;
+  border-radius: 16px;
+}
+
 .center {
-  justify-content: 'center';
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex {
+  display: flex;
 }

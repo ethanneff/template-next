@@ -1,7 +1,6 @@
-import {ReactElement} from 'react';
 import {CommentPage} from '../../modules/comments/CommentPage';
 
-const CommentRoute = (): ReactElement => {
+const CommentRoute = (): JSX.Element => {
   return <CommentPage />;
 };
 

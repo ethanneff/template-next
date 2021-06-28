@@ -17,8 +17,8 @@
   justify-content: center;
 }
 
-.nav-link {
-  padding: 1rem;
+.navTitle {
+  padding-left: 0.5rem;
 }
 
 .div {
@@ -27,7 +27,7 @@
 }
 
 .nav {
-  padding: 0.5rem;
+  padding-top: 1rem;
   display: flex;
   justify-content: space-between;
 }

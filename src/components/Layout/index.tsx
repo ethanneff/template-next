@@ -1,18 +1,17 @@
 import Head from 'next/head';
-import {ReactElement} from 'react';
 import {Constants} from '../../utils';
 import {Image} from '../Image';
 import {NavButtonLink} from '../NavButtonLink';
 import {NavLink} from '../NavLink';
-import styles from './index.module.css';
+import styles from './Layout.module.css';
 
-const year = new Date().getFullYear();
+const getYear = new Date().getFullYear();
 
 type Props = {
-  children: ReactElement | ReactElement[];
+  children: JSX.Element | JSX.Element[];
 };
 
-export const Layout = ({children}: Props): ReactElement => {
+export const Layout = ({children}: Props): JSX.Element => {
   return (
     <div className={styles.container}>
       <Head>
@@ -35,8 +34,8 @@ export const Layout = ({children}: Props): ReactElement => {
           <div className={styles.div}>
             <NavLink href="/">
               <div className={styles.row}>
-                <Image alt="logo" size={40} src="/images/profile.webp" />
-                <p>example</p>
+                <Image alt="logo" circle size={40} src="/images/profile.webp" />
+                <p className={styles.navTitle}>Example</p>
               </div>
             </NavLink>
           </div>
@@ -61,7 +60,7 @@ export const Layout = ({children}: Props): ReactElement => {
       </header>
       <main>{children}</main>
       <footer className={styles.footer}>
-        <p>example {year}</p>
+        <p>Example {getYear}</p>
       </footer>
     </div>
   );

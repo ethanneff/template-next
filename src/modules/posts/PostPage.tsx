@@ -1,40 +1,18 @@
 import Head from 'next/head';
 import {useRouter} from 'next/router';
-import {ReactElement} from 'react';
-import useSWR from 'swr';
 import {Layout} from '../../components';
-import {Constants, fetchJson} from '../../utils';
-import {PostSection} from './PostSection';
-import {isPost} from './utils';
+import {PostPageBody} from './PostPageBody';
 
-export const PostPage = (): ReactElement => {
+export const PostPage = (): JSX.Element => {
   const router = useRouter();
   const {postId} = router.query;
-  const url = `${Constants.baseUrl}/posts/${postId}`;
-  const {data, error} = useSWR(url, fetchJson);
 
-  if (error) return <div>failed to load</div>;
-  if (!data) return <div>loading...</div>;
-  if (!isPost(data)) return <div>invalid data</div>;
-
-  const {id, title, body} = data;
   return (
     <Layout>
       <Head>
-        <title>
-          Post
-          {postId}
-        </title>
+        <title>Post {postId} </title>
       </Head>
-
-      <h1>
-        Post
-        {postId}
-      </h1>
-
-      <div>
-        <PostSection body={body} id={id} title={title} />
-      </div>
+      <PostPageBody />
     </Layout>
   );
 };

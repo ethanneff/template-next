@@ -1,7 +1,6 @@
-import {ReactElement} from 'react';
 import {PostsPage} from '../../modules/posts/PostsPage';
 
-const PostsRoute = (): ReactElement => {
+const PostsRoute = (): JSX.Element => {
   return <PostsPage />;
 };
 

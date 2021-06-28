@@ -1,0 +1,12 @@
+.marginRight {
+  margin-right: 16px;
+}
+
+.userIcon {
+  padding: 8px;
+  display: flex;
+  background-color: white;
+
+  align-items: center;
+  justify-content: center;
+}

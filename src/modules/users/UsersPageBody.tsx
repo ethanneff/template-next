@@ -1,10 +1,9 @@
-import {ReactElement} from 'react';
 import useSWR from 'swr';
 import {Constants, fetchJson} from '../../utils';
 import {UserCard} from './UserCard';
 import {isUsers} from './utils';
 
-export const UsersBody = (): ReactElement => {
+export const UsersPageBody = (): JSX.Element => {
   const {data, error} = useSWR(`${Constants.baseUrl}/users`, fetchJson);
 
   if (error) return <div>failed to load</div>;

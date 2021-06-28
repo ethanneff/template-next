@@ -1,10 +1,9 @@
 import Head from 'next/head';
 import {useRouter} from 'next/router';
-import {ReactElement} from 'react';
 import {Layout} from '../../components';
-import {UserBody} from './UserBody';
+import {UserPageBody} from './UserPageBody';
 
-export const UserPage = (): ReactElement => {
+export const UserPage = (): JSX.Element => {
   const router = useRouter();
   const {userId} = router.query;
 
@@ -14,7 +13,7 @@ export const UserPage = (): ReactElement => {
         <title>User {userId}</title>
       </Head>
       <h1>User {userId}</h1>
-      <UserBody />
+      <UserPageBody />
     </Layout>
   );
 };

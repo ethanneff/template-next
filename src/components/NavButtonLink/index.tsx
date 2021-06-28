@@ -1,12 +1,12 @@
 import {useRouter} from 'next/router';
-import {MouseEvent, ReactElement, useCallback} from 'react';
+import {MouseEvent, useCallback} from 'react';
 
 type Props = {
-  children: ReactElement;
+  children: JSX.Element;
   href: string;
 };
 
-export const NavButtonLink = ({href, children}: Props): ReactElement => {
+export const NavButtonLink = ({href, children}: Props): JSX.Element => {
   const router = useRouter();
 
   const handleClick = useCallback(

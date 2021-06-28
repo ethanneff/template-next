@@ -1,10 +1,10 @@
 import {useRouter} from 'next/router';
-import {ReactElement} from 'react';
 import useSWR from 'swr';
+import utilStyles from '../../styles/utils.module.css';
 import {Constants, fetchJson} from '../../utils';
 import {isComment} from './utils';
 
-export const CommentBody = (): ReactElement => {
+export const CommentBody = (): JSX.Element => {
   const router = useRouter();
   const {commentId} = router.query;
   const url = `${Constants.baseUrl}/comments/${commentId}`;
@@ -16,7 +16,7 @@ export const CommentBody = (): ReactElement => {
 
   const {id, postId, name, email, body} = data;
   return (
-    <div>
+    <div className={utilStyles.card}>
       {id} {postId} {name} {email} {body}
     </div>
   );

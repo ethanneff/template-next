@@ -1,9 +1,8 @@
 import Head from 'next/head';
-import {ReactElement} from 'react';
 import {Layout} from '../../components';
 import {CommentsBody} from './CommentsBody';
 
-export const CommentsPage = (): ReactElement => {
+export const CommentsPage = (): JSX.Element => {
   return (
     <Layout>
       <Head>

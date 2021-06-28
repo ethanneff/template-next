@@ -1,5 +1,6 @@
-import {ReactElement, useMemo} from 'react';
+import {useMemo} from 'react';
 import {NavLink} from '../../components';
+import utilStyles from '../../styles/utils.module.css';
 import {UserIcon} from './UserIcon';
 
 type Props = {
@@ -9,29 +10,21 @@ type Props = {
   phone: string;
 };
 
-export const UserCard = ({id, name, email, phone}: Props): ReactElement => {
+export const UserCard = ({id, name, email, phone}: Props): JSX.Element => {
   const tele = useMemo(() => phone.split(' ')[0], [phone]);
 
   return (
-    <div
-      key={id}
-      style={{
-        display: 'flex',
-        backgroundColor: '#f3f3f3',
-        padding: 16,
-        borderRadius: 16,
-      }}>
-      <div
-        style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-        <UserIcon id={id} name={name} />
-        <div style={{paddingLeft: 16}}>
+    <div className={utilStyles.card} key={id}>
+      <div className={utilStyles.center}>
+        <UserIcon id={id} />
+        <div>
           <div>
             <h4>{name}</h4>
             <a href={`mailto:${email}`}>{email}</a>
             <span>|</span>
             <a href={`tel:${tele}`}>{tele}</a>
           </div>
-          <div style={{display: 'flex'}}>
+          <div className={utilStyles.flex}>
             <NavLink href="/posts">
               <span>🪧 Posts</span>
             </NavLink>

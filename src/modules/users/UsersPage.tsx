@@ -1,16 +1,15 @@
 import Head from 'next/head';
-import {ReactElement} from 'react';
 import {Layout} from '../../components';
-import {UsersBody} from './UsersBody';
+import {UsersPageBody} from './UsersPageBody';
 
-export const UsersPage = (): ReactElement => {
+export const UsersPage = (): JSX.Element => {
   return (
     <Layout>
       <Head>
         <title>Users</title>
       </Head>
       <h1>Users</h1>
-      <UsersBody />
+      <UsersPageBody />
     </Layout>
   );
 };

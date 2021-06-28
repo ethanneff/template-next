@@ -1,11 +1,10 @@
 import {useRouter} from 'next/router';
-import {ReactElement} from 'react';
 import useSWR from 'swr';
 import {Constants, fetchJson} from '../../utils';
 import {UserCard} from './UserCard';
 import {isUser} from './utils';
 
-export const UserBody = (): ReactElement => {
+export const UserPageBody = (): JSX.Element => {
   const router = useRouter();
   const {userId} = router.query;
   const url = `${Constants.baseUrl}/users/${userId}`;

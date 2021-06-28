@@ -1,9 +1,8 @@
-import {ReactElement} from 'react';
 import useSWR from 'swr';
 import {Constants, fetchJson} from '../../utils';
 import {isComments} from './utils';
 
-export const CommentsBody = (): ReactElement => {
+export const CommentsBody = (): JSX.Element => {
   const {data, error} = useSWR(`${Constants.baseUrl}/comments`, fetchJson);
 
   if (error) return <div>failed to load</div>;
