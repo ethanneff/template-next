@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.9](https://github.com/ethanneff/template-web/compare/v1.1.8...v1.1.9) (2021-06-28)
+
+
+### Bug Fixes
+
+* add styling ([2215248](https://github.com/ethanneff/template-web/commit/22152485449ac0222edc252a9b3809dd724bac51))
+* update navigation ([3b79d8d](https://github.com/ethanneff/template-web/commit/3b79d8d53dadb3d52dd3194ff782c86071aa3d3f))
+
 ## [1.1.8](https://github.com/ethanneff/template-web/compare/v1.1.7...v1.1.8) (2021-06-28)
 
 
