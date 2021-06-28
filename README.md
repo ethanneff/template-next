@@ -117,18 +117,20 @@ yarn start
 - [x] github pages
 - [x] type isPost better
 
+- [x] directory guide
+- [x] image hosting
+- [x] codecov
+
 - [ ] header
 - [ ] footer
 - [ ] styling
 - [ ] fix loading issue
-- [x] directory guide
-
 - [ ] redux
-- [ ] image hosting
-- [x] codecov
+- [ ] 80% jest
+- [ ] sample PR
+
 - [ ] danger
 - [ ] lighthouse
-- [ ] 80% jest
 
 ## Additional Resources
 
