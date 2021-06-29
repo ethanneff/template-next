@@ -22,7 +22,10 @@ module.exports = {
       'error',
       {namedComponents: 'arrow-function', unnamedComponents: 'arrow-function'},
     ],
-    'react-hooks/exhaustive-deps': ['error'],
+    'react-hooks/exhaustive-deps': [
+      'error',
+      {enableDangerousAutofixThisMayCauseInfiniteLoops: true},
+    ],
     'import/no-cycle': 'error',
     'import/no-unresolved': ['error', {ignore: ['root-types']}],
     // Ignored (NextJS)
