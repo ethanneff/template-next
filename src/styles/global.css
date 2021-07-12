@@ -12,7 +12,7 @@ body {
 }
 
 button {
-  background-color: #59a715;
+  background-color: #0070f3;
   color: #fff;
   border: none;
   border-radius: 0.2rem;
@@ -25,7 +25,7 @@ button:hover {
 }
 
 a {
-  color: #59a715;
+  color: #0070f3;
   text-decoration: none;
 }
 
