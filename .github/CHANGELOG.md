@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/ethanneff/template-web/compare/v1.2.0...v1.2.1) (2021-07-12)
+
+
+### Bug Fixes
+
+* make buttons blue ([89389fa](https://github.com/ethanneff/template-web/commit/89389fa5ab4074e4cd6a1ee81f642287d9897b8e))
+
 # [1.2.0](https://github.com/ethanneff/template-web/compare/v1.1.9...v1.2.0) (2021-07-12)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@ethanneff/template-web",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A sample web template using NextJS and Typescript.",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ethanneff"
