@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/ethanneff/template-web/compare/v1.2.2...v1.2.3) (2021-07-12)
+
+
+### Bug Fixes
+
+* no period ([20b42c7](https://github.com/ethanneff/template-web/commit/20b42c7b721108bd7c2230f14cdf59fcc3941a14))
+
 ## [1.2.2](https://github.com/ethanneff/template-web/compare/v1.2.1...v1.2.2) (2021-07-12)
 
 
