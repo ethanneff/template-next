@@ -1,5 +1,21 @@
 # Changelog
 
+# [1.2.0](https://github.com/ethanneff/template-web/compare/v1.1.9...v1.2.0) (2021-07-12)
+
+
+### Bug Fixes
+
+* add github package template ([4ca3911](https://github.com/ethanneff/template-web/commit/4ca3911b53d3e81dbb9e222f7b596074b254d99c))
+* add root-type declaration file ([30f6d53](https://github.com/ethanneff/template-web/commit/30f6d53fa25ec0499f442115b007dc3b1fb183bb))
+* remove comment ([9fd2004](https://github.com/ethanneff/template-web/commit/9fd2004802596c38c4561e6e8b97d0a095758e4f))
+* rename build to validate lint and tests ([bca49c7](https://github.com/ethanneff/template-web/commit/bca49c7c2e8dfb71819ef711530691a7ed11a633))
+
+
+### Features
+
+* add redux ([3d90aae](https://github.com/ethanneff/template-web/commit/3d90aae62bde4fe7edeaa6b6c45a20a40ccafdf4))
+* make buttons green ([#10](https://github.com/ethanneff/template-web/issues/10)) ([a0445b3](https://github.com/ethanneff/template-web/commit/a0445b3a1beb9be04cac2e8dbd4a1b574c0d3a47))
+
 ## [1.1.9](https://github.com/ethanneff/template-web/compare/v1.1.8...v1.1.9) (2021-06-28)
 
 
