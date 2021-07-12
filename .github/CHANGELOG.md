@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/ethanneff/template-web/compare/v1.2.1...v1.2.2) (2021-07-12)
+
+
+### Bug Fixes
+
+* audit yarn ([5906c38](https://github.com/ethanneff/template-web/commit/5906c3817ab5f207ad2efc73d30e9a4f6adba514))
+
 ## [1.2.1](https://github.com/ethanneff/template-web/compare/v1.2.0...v1.2.1) (2021-07-12)
 
 
