@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.2.5](https://github.com/ethanneff/template-web/compare/v1.2.4...v1.2.5) (2021-07-12)
+
 ## [1.2.4](https://github.com/ethanneff/template-web/compare/v1.2.3...v1.2.4) (2021-07-12)
 
 
