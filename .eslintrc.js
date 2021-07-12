@@ -1,8 +1,8 @@
 module.exports = {
   env: {browser: true, es2021: true},
   extends: [
-    'plugin:react/all',
     'plugin:jest/all',
+    'plugin:react/all',
     'eslint:recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
