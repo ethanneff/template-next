@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.7](https://github.com/ethanneff/template-next/compare/v1.2.6...v1.2.7) (2021-12-22)
+
+
+### Bug Fixes
+
+* rename to template next ([fc73b20](https://github.com/ethanneff/template-next/commit/fc73b20f68de0a750be691532ee180bfc08f43ed))
+
 ## [1.2.6](https://github.com/ethanneff/template-next/compare/v1.2.5...v1.2.6) (2021-08-18)
 
 

@@ -1,5 +1,7 @@
 # Template Web
 
+A template repo with NextJS, Typescript, Redux, Eslint, and Github Actions.
+
 ## Install
 
 ```sh
@@ -128,8 +130,6 @@ yarn start
 - [ ] redux
 - [ ] 80% jest
 - [x] sample PR
-
-- [ ] danger
 - [ ] lighthouse
 
 ## Additional Resources
