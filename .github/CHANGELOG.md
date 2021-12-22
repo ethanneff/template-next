@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.8](https://github.com/ethanneff/template-next/compare/v1.2.7...v1.2.8) (2021-12-22)
+
+
+### Bug Fixes
+
+* don't update deps ([e253882](https://github.com/ethanneff/template-next/commit/e253882e60e001bbade68fcf22d0a73084cb1fa4))
+* remove artifactory ([eb7ae92](https://github.com/ethanneff/template-next/commit/eb7ae921dd24b7aa5249b32f5e86aecd0fc057ed))
+* update ci node updates ([3dc3943](https://github.com/ethanneff/template-next/commit/3dc3943884d1779ce14862e4127717003a2c0d42))
+
 ## [1.2.7](https://github.com/ethanneff/template-next/compare/v1.2.6...v1.2.7) (2021-12-22)
 
 
