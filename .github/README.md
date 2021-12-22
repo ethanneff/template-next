@@ -1,6 +1,13 @@
 # Template Web
 
-A template repo with NextJS, Typescript, Redux, Eslint, and Github Actions.
+A template repo with NextJS, Typescript, Redux, Eslint, Github Actions, and Github Pages.
+
+https://ethanneff.github.io/template-next/
+
+users|posts|comments
+---|---|---
+<img width="839" alt="Screen Shot 2021-12-22 at 2 15 34 PM" src="https://user-images.githubusercontent.com/2933593/147156927-5f6c7267-9432-4555-8b18-1ef61894337d.png">|<img width="835" alt="Screen Shot 2021-12-22 at 2 15 41 PM" src="https://user-images.githubusercontent.com/2933593/147156924-1fb25144-9150-40a8-859e-2fb341c870b3.png">|<img width="836" alt="Screen Shot 2021-12-22 at 2 25 41 PM" src="https://user-images.githubusercontent.com/2933593/147157011-4e662f46-2630-495d-9a34-22cc469a8a3e.png">
+
 
 ## Install
 
