@@ -1,4 +1,4 @@
-const path = '/template-web';
+const path = '/template-next';
 const prod = process.env.NODE_ENV === 'production';
 
 module.exports = {

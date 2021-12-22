@@ -3,8 +3,8 @@
 ## Install
 
 ```sh
-git clone https://ethanneff.github.io/template-web/
-cd template-web
+git clone https://ethanneff.github.io/template-next/
+cd template-next
 yarn install
 ```
 
@@ -34,7 +34,7 @@ yarn build
 yarn start
 ```
 
-- Local development production is done at [localhost:3333/template-web](http://localhost:3333/template-web)
+- Local development production is done at [localhost:3333/template-next](http://localhost:3333/template-next)
 
 ## Contributing
 
@@ -44,8 +44,8 @@ yarn start
 ## Deploying
 
 - Deploying happens automatically after merging your code to the `main` branch.
-- View the production website at [github pages](https://ethanneff.github.io/template-web)
-- View the bundled package at [github packages](https://github.com/ethanneff/template-web/packages/840620)
+- View the production website at [github pages](https://ethanneff.github.io/template-next)
+- View the bundled package at [github packages](https://github.com/ethanneff/template-next/packages/840620)
 
 ## File Structure
 
